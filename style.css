@@ -1,0 +1,298 @@
+/* body
+{
+  margin: 0;
+  padding: 0;
+  background: #ccc;
+}
+.box
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 150px;
+  margin: 0;
+  padding: 0;
+}
+.box::before
+{
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 20px;
+  left: 0;
+  bottom: 4px;
+  background: #000;
+  filter: blur(10px);
+  border-radius: 50%;
+  opacity: 0;
+  transition: .5s;
+}
+.box:hover:before
+{
+  transition-delay: .2s;
+  opacity: 1;
+}
+.box h1
+{
+  font-family: fontAwesome;
+  font-size: 70px;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  height: 150px;
+}
+.box h1::before
+{
+  content:"\f09a";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background:#fff;
+  color: #000;
+  transform-origin: top;
+  transform: rotateX(0deg);
+  transition: .5s;
+  
+}
+.box h1::after
+{
+  content:"\f09a";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #3b5999;
+  color: #fff;
+  transform-origin: bottom;
+  transform: rotateX(90deg) translateY(50%);
+  transition: .5s;
+}
+.box h1:hover::before
+{
+  transform: rotateX(90deg) translateY(-50%);
+}
+.box h1:hover::after
+{
+  transform: rotateX(0deg) translateY(-30%);
+} */
+
+body
+{
+  margin: 0;
+  padding: 0;
+  background: #ccc;
+}
+.box
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.box ul
+{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+.box ul li
+{
+  position: relative;
+  list-style: none;
+  text-align: center;
+  margin: 15px;
+}
+.box ul li::before
+{
+  content: '';
+  position: absolute;
+  background: #262626;
+  border-radius: 50%;
+  filter: blur(10px);
+  width: 100%;
+  height: 20px;
+  bottom: 4px;
+  left: 0;
+  opacity: 0;
+  transition: .5s;
+}
+.box ul li a
+{
+  position: relative;
+  display: inline-block;
+  font-family: fontAwesome;
+  font-size: 70px;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+}
+
+/* Facebook */
+.box ul li:nth-child(1) a:before
+{
+  content: '\f09a';
+  color: #000;
+  position: absolute;
+  background: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+  transform-origin: top;
+  transform: rotateX(0deg);
+}
+.box ul li:nth-child(1) a:after
+{
+  content: '\f09a';
+  color: #fff;
+  position: absolute;
+  background: #3b5999;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+  transform-origin: bottom;
+  transform: rotateX(90deg);
+}
+
+/* Twitter */
+.box ul li:nth-child(2) a:before
+{
+  content: '\f099';
+  color: #000;
+  position: absolute;
+  background: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+  transform-origin: top;
+  transform: rotateX(0deg);
+}
+.box ul li:nth-child(2) a:after
+{
+  content: '\f099';
+  color: #fff;
+  position: absolute;
+  background: #55acee;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+  transform-origin: bottom;
+  transform: rotateX(90deg);
+}
+
+/* Google Plus */
+.box ul li:nth-child(3) a:before
+{
+  content: '\f0d5';
+  color: #000;
+  position: absolute;
+  background: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+  transform-origin: top;
+  transform: rotateX(0deg);
+}
+.box ul li:nth-child(3) a:after
+{
+  content: '\f0d5';
+  color: #fff;
+  position: absolute;
+  background: #dd4b39;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+  transform-origin: bottom;
+  transform: rotateX(90deg);
+}
+
+/* Linkedin */
+.box ul li:nth-child(4) a:before
+{
+  content: '\f0e1';
+  color: #000;
+  position: absolute;
+  background: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+  transform-origin: top;
+  transform: rotateX(0deg);
+}
+.box ul li:nth-child(4) a:after
+{
+  content: '\f0e1';
+  color: #fff;
+  position: absolute;
+  background: #0077B5;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+  transform-origin: bottom;
+  transform: rotateX(90deg);
+}
+
+/* Instagram */
+.box ul li:nth-child(5) a:before
+{
+  content: '\f16d';
+  color: #000;
+  position: absolute;
+  background: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+  transform-origin: top;
+  transform: rotateX(0deg);
+}
+.box ul li:nth-child(5) a:after
+{
+  content: '\f16d';
+  color: #fff;
+  position: absolute;
+  background: #e4405f;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+  transform-origin: bottom;
+  transform: rotateX(90deg);
+}
+
+
+.box ul li:hover a:before
+{
+  transform: rotateX(90deg) translateY(-50%);
+}
+.box ul li:hover a:after
+{
+  transform: rotateX(0deg) translateY(-30%);
+}
+.box ul li:hover:before
+{
+  transition-delay: .2s;
+  opacity: 1;
+}
